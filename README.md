@@ -168,4 +168,4 @@ Funcionalidades del admin:
 
 ## Licencia
 
-Este proyecto fue desarrollado con fines educativos para la materia de Desarrollo de sistemas Web Tercero con Django en el instituto IDRA.
+Este proyecto fue desarrollado con fines educativos para la materia de Desarrollo de sistemas Web en el instituto IDRA.
