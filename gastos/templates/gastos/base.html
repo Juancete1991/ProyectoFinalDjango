@@ -16,7 +16,10 @@
           <span class="navbar-text text-white me-3">Hola, {{ user.username }}</span>
           <a class="btn btn-outline-light" href="{% url 'gastos:create' %}">Nuevo gasto</a>
           <a class="btn btn-success" href="{% url 'gastos:exportar_csv' %}">📥 Descargar CSV</a>
-          <a class="btn btn-outline-light" href="{% url 'logout' %}">Cerrar sesión</a>
+          <form method="post" action="{% url 'logout' %}" class="d-inline">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-outline-light">Cerrar sesión</button>
+          </form>
         {% else %}
           <a class="btn btn-outline-light" href="{% url 'login' %}">Iniciar sesión</a>
         {% endif %}
